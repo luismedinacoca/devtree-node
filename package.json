@@ -1,10 +1,10 @@
 {
   "name": "devtree",
+  "type": "module",
   "version": "1.0.0",
   "description": "Express and Typescript - 1st Project",
   "license": "ISC",
   "author": "Luiggie",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "dev": "node --watch index.js",

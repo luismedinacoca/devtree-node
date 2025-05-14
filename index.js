@@ -1,4 +1,5 @@
-const express = require('express');
+//const express = require('express');   // CJS: Common JS
+import express from 'express'           // ESM: EcmaScript Modules
 
 //console.log(express)
 const app = express();
@@ -10,7 +11,9 @@ app.get('/', (req, res) => {
 })
 
 
+//const port = 3000;
+const port = process.env.PORT || 4000;
 
-app.listen(4000, () => {
-    console.log('Servidor funcionando...');
+app.listen(port, () => {
+    console.log('Servidor funcionando en el port: ', port);
 })
