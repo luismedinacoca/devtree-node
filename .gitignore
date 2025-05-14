@@ -1,0 +1,66 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules
+pnpm-lock.yaml # Si usas pnpm
+yarn.lock    # Si usas Yarn v1
+
+# Optional build artifacts
+dist
+build
+coverage
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Various editors and tools
+.DS_Store
+Thumbs.db
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Packages lock file (usually you DO want to commit these)
+# package-lock.json
+
+# TypeScript output
+lib
+build
+
+# Cache and temp files
+.cache
+tmp
+temp
+
+# Compiled files
+*.js.map
+*.d.ts
+
+# JetBrains IDEs
+.idea/
+
+# macOS files
+.AppleDouble
+
+# Docker related
+docker-compose.override.yml
+.dockerenv
+.env.docker
+docker-compose.yml.backup
+
+# Kubernetes related
+.kube/
+
+# Others
+report.html
