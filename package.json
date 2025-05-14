@@ -7,13 +7,16 @@
   "author": "Luiggie",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch index.js",
-    "nodemon": "nodemon index.js"
+    "watch": "node --watch src/index.ts",
+    "dev": "nodemon src/index.ts"
   },
   "dependencies": {
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@types/express": "^5.0.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

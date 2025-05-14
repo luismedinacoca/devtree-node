@@ -7,7 +7,12 @@ const app = express();
 //routing:
 app.get('/', (req, res) => {
     //res.render()  
-    res.send('Hello world from Express');
+    res.send('Hello world from Express / Typescript');
+})
+
+app.get('/users', (req, res) => {
+    //res.render()  
+    res.send('Hello world from Users');
 })
 
 
