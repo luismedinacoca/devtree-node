@@ -1,8 +1,18 @@
-import express from 'express'
+import express from 'express';
+import router from './router';
+
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello world from Express / Typescript');
+//app.get('/', router);
+/*
+    with app.get('/', router);
+    Get access to home ('/') only.
+    For '/nosotros' or '/blog', it will not work.
+ */
+app.use(router);
+
+app.use('/ecommerce', () => {
+    console.log("Desde Ecommerce!")
 })
 
 export default app;
